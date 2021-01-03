@@ -1,0 +1,19 @@
+students {
+	padding:6%;
+	padding-top:4%;
+	background-color: lightgreen;
+	font-size: 14pt;
+}
+student {
+	display: block;
+	padding:1%;
+	margin-bottom: 30pt;
+	margin-left: 5%;
+	margin-right: 30%;
+	background-color: bisque;
+}	
+usn,college,branch,yoj,email{
+	display: block;
+	margin-bottom: 1%;
+	margin-left:4%;
+}

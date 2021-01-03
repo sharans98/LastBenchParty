@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text - Growing</title>
+	<style>
+
+	</style>
+</head>
+<body onload="start();">
+	<div id="a">
+	</div>
+
+	<script type="text/javascript">
+		var t, size=0;
+		function start(){
+			t=window.setInterval("Increase();",100)
+		}
+
+		function Increase(){
+			size+=1;
+			x=document.getElementById("a");
+			x.style.fontSize=size + "pt";
+			x.style.color = "red";
+			x.innerHTML = "Text - Growing : " + size + "pt"
+			if (size>50){
+				window.clearTimeout(t);
+				alert("Decreasing begins!");
+				t=window.setInterval("Decreasing();",100);
+			} 
+		}
+
+		function Decreasing(){
+			x=document.getElementById("a");
+			x.style.fontSize = size + "pt";
+			x.style.color = "Blue";
+			x.innerHTML = "Text Shrinking : " + size + "pt"
+			size -=1;
+			if (size<5){
+				window.clearTimeout(t)
+			}
+		}
+	</script>
+</body>
+</html>

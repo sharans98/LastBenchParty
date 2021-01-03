@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pogram1 : Simple Calc using JS</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div>
+		<p>Simple Calculator using JS</p>
+		<label>Enter Number1:</label>
+		<input type="number" id="n1" required><br><br>
+		<label> Enter Number2:</label>
+		<input type="number" id="n2" required><br><br>
+		<input type="submit" value="Add" onclick="calc('+');">
+		<input type="submit" value="Subtract" onclick="calc('-');"/>
+		<input type="submit" value="Multiply" onclick="calc('*');"/>
+		<input type="submit" value="Divide" onclick="calc('/');"/><br><br>
+		<label>Result : </label>
+		<input type="number" name="res" id="res" readonly/>
+
+	</div>
+	<script type="text/javascript">
+		function calc(a){
+			var n1 = parseInt(document.getElementById("n1").value);
+			var n2 = parseInt(document.getElementById("n2").value);
+			var result=0;
+			if (a=="+"){
+				result = n1+n2;
+			}
+			if (a=="-"){
+				result = n1 - n2;
+			}
+			if (a=="*"){
+				result = n1 * n2;
+			}
+			if (a=="/"){
+				result = n1/n2;
+			}
+
+			document.getElementById("res").value=result;
+		}
+	</script>
+</body>
+</html>

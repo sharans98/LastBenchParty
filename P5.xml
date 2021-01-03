@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="P5.css"?>
+
+<Students>
+	<student>
+		<name>AAA</name>
+		<usn>0001</usn>
+		<dept>ISE</dept>
+		<yoj>2015</yoj>
+		<college>PES</college>
+		<email>AAA@pes.edu</email>
+	</student>
+	<student>
+		<name>BBB</name>
+		<usn>0010</usn>
+		<dept>CSE</dept>
+		<yoj>2016</yoj>
+		<college>PES</college>
+		<email>BBB@pes.edu</email>
+	</student>
+	<student>
+		<name>CCC</name>
+		<usn>0100</usn>
+		<dept>ME</dept>
+		<yoj>2017</yoj>
+		<college>PES</college>
+		<email>CCC@pes.edu</email>
+	</student>	
+</Students>

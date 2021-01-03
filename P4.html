@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number or String</title>
+	<style>
+	</style>
+</head>
+<body>
+	<label>Enter a Number or a String:</label>
+	<input type="text" onblur="action(this.value)" />
+	<div id="res"></div>
+
+	<script type="text/javascript">
+		function action(val){
+			x=document.getElementById("res");
+			if (Number.isInteger(parseInt(val))){
+				rev= parseInt(0);
+				num = parseInt(val);
+				while(num>0){
+					rem=num%10;
+					rev = rev*10 + rem;
+					num = parseInt(num/10);
+				}
+				x.innerHTML= "The reversal of number" + parseInt(val) + " is " + rev;
+			}
+			else{
+				for (var i=0;i<val.length;i++){
+					if (val[i] == "a" || val[i] == "A" ||val[i] == "e" ||val[i] == "E" ||val[i] == "i" ||val[i] == "I" ||val[i] == "o" ||val[i] == "O" ||val[i] == "u" ||val[i] == "U"){
+						x.innerHTML = " The left most vowel is at position " + (i+1);
+						break;
+					}
+				x.innerHTML = "There are no Vowels."
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>
